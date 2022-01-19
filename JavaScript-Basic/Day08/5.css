@@ -1,0 +1,26 @@
+*{margin: 0;
+  padding: 0;}
+.chuyendong{
+    animation: dc1 2s forwards !important;
+}
+@-webkit-keyframes dc1{
+    0% {transform: translateX(0px) translateY(0px);}
+    25% {transform: translateX(200px) translateY(200px);}
+    50% {transform: translateX(400px) translateY(400px);}
+    75% {transform: translateX(600px) translateY(600px);}
+    100% {transform: translateX(800px) translateY(800px);}
+}
+#dichuyen{
+    animation: dc2 3s forwards;
+}
+@-webkit-keyframes dc2{
+    100% {transform: translateX(0px) translateY(0px);}
+    75% {transform: translateX(200px) translateY(200px);}
+    50% {transform: translateX(400px) translateY(400px);}
+    25% {transform: translateX(600px) translateY(600px);}
+    0% {transform: translateX(800px) translateY(800px);}
+}
+
+.dungim{
+    animation: none !important;
+}

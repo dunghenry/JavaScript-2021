@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <button id="btn">Load docs</button>
+    <script>
+        console.log(window.innerHeight);
+        console.log(window.innerWidth);
+        console.log(window.location.href)
+        // Trả về url hiện tại
+        console.log(window.location.hostname)
+        // Trả về tên miền
+        console.log(window.location.pathname);
+        // Đường dẫn và tên tệp
+        console.log(window.location.protocol)
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            window.location.assign("https://www.facebook.com/");
+        })
+        console.log(window.location.assign);
+        console.log(window.history)
+        console.log(navigator.cookieEnabled)
+        console.log(navigator.appName)
+    </script>
+</body>
+</html>

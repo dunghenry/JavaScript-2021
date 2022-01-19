@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <script>
+        var person = {
+            name: "Dung",   
+            age: 20
+        }
+        person.eyeColor = "blue";
+        delete person.eyeColor;
+        // Xóa thuộc tính eyeColor
+        console.log(person);
+        console.log(person.age);
+        console.log(person['age']);
+        // Cách truy cập
+        
+        var Person = {
+            name: "dung",
+            age: 30,
+            cars: [
+                {name: "toyota", models: ["Fiessta", "Focus"]},
+                {name: "Honda", models: ["302", "X3"]}
+            ]
+        }
+        console.log(Person.cars[0].name);
+    </script>
+</body>
+</html>

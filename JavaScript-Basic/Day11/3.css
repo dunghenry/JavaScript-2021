@@ -1,0 +1,40 @@
+*{margin: 0;
+padding: 0;}
+
+.menu{
+    display: flex;
+    background: gray;
+    position: fixed;
+    width: 100%;
+    padding: 40px;
+}
+.trai{
+    font-size: 40px;
+    padding-right: 700px;
+    color: hotpink;
+    font-weight: bold;
+
+}
+.phai{
+    padding-top: 20px;
+}
+.phai a{
+    text-decoration: none;
+    padding: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: greenyellow;
+    
+}
+.text{
+    width: 200px !important;
+}
+.thaydoi{
+    padding: 20px;
+}
+.nholai{
+    font-size: 20px;
+}
+.thunho{
+    padding-top: 5px !important;
+}

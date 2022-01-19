@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <script>
+        var courses = ["JS", "C++", "PHP"];
+        // ! Cách 1:
+
+        courses.forEach(function(cours){
+            console.log(cours);
+        })
+
+        // Cách 2:
+        function myFunction(course){
+            console.log(course);
+        }
+        courses.forEach(myFunction);
+
+
+        // Nguyên tắc hoạt động của forEach
+
+        Array.prototype.forEach2 = function(callBack){
+            var output = [];
+            for(var i = 0; i < this.length; i++){
+                var result = callBack(this[i], i);
+                output.push(result);
+            }
+            return output;
+        }
+        var htmls = courses.forEach2(function(course){
+            return `<h2>${course}</h2>`;
+        })
+        console.log(htmls.join())
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <script>
+        
+        // courses.map(function(course){
+        //     console.log(course);
+        // })
+        // CallBack bao gôm forEach, map, ...
+        // function myFunction(course){
+        //     console.log(course);
+        // }
+        // courses.map(myFunction);
+        
+        // Nguyên tắc hoạt động của map
+
+        Array.prototype.map2 = function(callBack){
+            var output = [];
+            // Tạo mảng rỗng
+            for(var i = 0; i < this.length; i++){
+                var result = callBack(this[i], i);
+                // Gọi lại hàm callBack và truyền đối số
+                // console.log(result);
+                output.push(result);
+                // Gắn result vào mảng rỗng ban đầu
+
+            }
+            return output;
+            // Trả lại mảng output
+        }
+        var courses = ["JS", "C++", "PHP"];
+        var htmls = courses.map2(function(course){
+            return `<h2>${course}</h2>`
+            // console.log(course, index);
+        })
+        console.log(htmls.join(''))
+        // Các phương thức hd giống map như forEach, reduce, find , filter
+
+        
+    </script>
+</body>
+</html>

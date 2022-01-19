@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio vel quasi ratione quam veritatis iure cumque, laudantium dolore doloribus incidunt reprehenderit dignissimos. Labore corporis, possimus sequi quisquam vero omnis.</div>
+    <script>
+       var h1 = document.createElement("h1");
+        var text = document.createTextNode("This is heading 1");
+        h1.appendChild(text);
+        var div = document.getElementById('demo');
+        div.appendChild(h1);
+
+        var text = document.getElementById('text');
+        // text.parentNode.removeChild(text);
+        // Xóa đoạn văn bản có id text
+        // Tương tự dùng replace để thay thế
+        text.remove();
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+$(function(){
+    $("button").click(function(){
+        console.log($(document).width());
+        console.log($(document).height());
+        console.log($(window).width());
+        console.log($(window).height());
+    })
+})
+$(function(){
+    $("button").click(function(){
+        $("h1").height(200).width(500);
+    })
+})

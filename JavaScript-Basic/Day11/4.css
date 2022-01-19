@@ -1,0 +1,39 @@
+*{margin: 0;
+ padding: 0;}
+.menu{
+    display: flex;
+    background: rgba(128, 128, 128, 0.473);
+    padding: 40px 0;
+    position: fixed;
+    width: 100%;
+}
+.left{
+    font-size: 40px;
+    color: honeydew;
+    font-weight: bold;
+    padding-right: 600px;
+}
+.right{
+    padding-top: 20px; ;
+    font-size: 20px;
+}
+.right a{
+    text-decoration: none;
+   
+    color: chartreuse;
+    text-transform: uppercase;
+    padding: 0 40px;
+}
+.text{
+    width: 200px;
+}
+.thaydoimenu{
+    padding: 20px 0;
+}
+.thaydoileft{
+    font-size: 25px;
+}
+.thaydoiright{
+    padding-top: 10px;
+    font-size: 15px;
+}

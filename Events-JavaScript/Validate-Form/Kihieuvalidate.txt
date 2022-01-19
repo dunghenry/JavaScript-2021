@@ -1,0 +1,16 @@
+. Biểu diễn bất kì kí tự nào
+[] Tập hợp kí tự
+[^] Tập kí tự phủ định
+* Lặp lại 0 đến nhiều lần
++ Lặp lại 1 hoặc nhiều lần
+? Tùy chọn có hoặc không ở phần trước ?
+{} Biểu diễn độ dài
+\ Thay thế cho { } [ ] / \ + * . $ ^ | ? nên để biểu diễn các ký tự đó dùng ký hiệu \ trước ký tự
+^ Kí tự đầu dòng
+$ Kí tự cuối dòng
+\w Chữ, số, và _ tương đương với [a-zA-Z_]
+\W Ngoài bảng chữ cái tương đương [^\w]
+\d Tương đương với số
+\D Ko phải là số td [^\d]
+\s Là kí tự trắng tương đương với: [\t\n\f\r\p{Z}]
+\S Ko phải là kí tự trắng
